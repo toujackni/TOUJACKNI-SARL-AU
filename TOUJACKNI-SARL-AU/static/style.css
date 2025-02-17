@@ -361,3 +361,61 @@ h1 {
     z-index: 3;
     transform: scale(1.2);
 }
+.products-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.category-title {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #00bcd4;
+    text-align: left;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.whatsapp-btn {
+    display: block;
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.products-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 100px; /* ✅ تزيد المسافة الفوق الفوتر */
+}
+.product img {
+    width: 100%;
+    max-width: 200px; /* حدد حجم مناسب */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
