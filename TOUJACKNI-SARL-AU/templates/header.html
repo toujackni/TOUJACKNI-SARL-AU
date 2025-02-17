@@ -1,0 +1,22 @@
+<header>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i> <!-- Icon du hamburger -->
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Maison</a></li>
+            <li><a href="{{ url_for('products') }}">Produits</a></li>
+            <li><a href="{{ url_for('contact') }}">Contactez-nous</a></li>
+            <li><a href="{{ url_for('locations') }}">Nos magasins</a></li>
+            <li><a href="{{ url_for('who_we_are') }}">Qui nous sommes</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    // Fonction qui va activer/désactiver le menu
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    }
+</script>

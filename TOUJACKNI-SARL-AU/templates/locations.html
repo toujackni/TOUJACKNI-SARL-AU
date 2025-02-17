@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Store Locations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='12345.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔹 Header -->
+    <header>
+        <div class="menu-toggle">☰</div> <!-- ✅ أيقونة القائمة -->
+        {% include 'header.html' %}
+    </header>
+
+    <!-- 🔹 Container Principal -->
+    <div class="container">
+        <p>Explorez nos magasins à Casablanca et trouvez les meilleures machines à coudre industrielles, pièces détachées et services de réparation.</p>
+
+        <!-- 🔹 Store 1 -->
+        <div class="store">
+            <img src="{{ url_for('static', filename='store1.jpg') }}" alt="TOUJACKNI STORE - Main Branch">
+            <div class="store-info">
+                <h2>TOUJACKNI STORE - Location 1</h2>
+                <p><strong>Address:</strong> 123 Industrial Avenue, Casablanca</p>
+                <p><strong>Services:</strong> Vente de machines à coudre JACK, de pièces détachées, de réparations électroniques et mécaniques.</p>
+                <p><a href="https://www.google.com/maps?q=123+Industrial+Avenue,Casablanca" target="_blank">📍 Voir sur Google Maps</a></p>
+            </div>
+        </div>
+
+        <!-- 🔹 Store 2 -->
+        <div class="store">
+            <img src="{{ url_for('static', filename='store2.jpg') }}" alt="TOUJACKNI STORE - Second Branch">
+            <div class="store-info">
+                <h2>TOUJACKNI STORE - Location 2</h2>
+                <p><strong>Address:</strong> 456 Commercial Street, Casablanca</p>
+                <p><strong>Services:</strong> Vente de machines à coudre, d’accessoires et de services d’entretien JACK.</p>
+                <p><a href="https://www.google.com/maps?q=456+Commercial+Street,Casablanca" target="_blank">📍 Voir sur Google Maps</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 Footer fixe -->
+    <footer>
+        <div class="contact-icons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/212771078329?text=Salut%20je%20veux%20discuter%20avec%20vous" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Téléphone -->
+            <a href="tel:+212771078329">
+                <i class="fas fa-phone"></i>
+            </a>
+            <!-- Gmail -->
+            <a href="mailto:toujacknistore@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <p>&copy; 2025 TOUJACKNI STORE</p>
+        </div>
+    </footer>
+
+</body>
+</html>

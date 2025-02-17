@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Nous Sommes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='OIP.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    {% include 'header.html' %}
+
+    <!-- Qui nous sommes -->
+    <div class="who-we-are-container">
+        <h1>TOUJACKNI STORE</h1>
+        <p>
+            TOUJACKNI Store is a company specialized in JACK sewing machines and all clothing equipment, 
+            founded in 2016 in Casablanca.<br>
+            After +5 years of effort and hard work, TOUJACKNI Store opened a new branch in Hay Al Fadl, 
+            in addition to the original and first branch in Hay Al Baraka 2 of Casablanca, 
+            one of the best garment and textile industrial zones in Morocco.<br>
+            Our headquarters are currently located in Hay Al Fadl, and TOUJACKNI Store is interested in 
+            providing a variety of new and used equipment that is widely consumed in the clothing and sewing market.
+        </p>
+
+        <!-- 📸 Collage des images -->
+        <div class="photo-collage">
+            <img src="{{ url_for('static', filename='store1.jpg') }}" alt="Store 1">
+            <img src="{{ url_for('static', filename='store2.jpg') }}" alt="Store 2">
+            <img src="{{ url_for('static', filename='store3.jpg') }}" alt="Store 3">
+            <img src="{{ url_for('static', filename='store4.jpg') }}" alt="Store 4">
+            <img src="{{ url_for('static', filename='store5.jpg') }}" alt="Store 5">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-icons">
+            <a href="https://wa.me/212771078329?text=Salut%20je%20veux%20discuter%20avec%20vous" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+212771078329"><i class="fas fa-phone"></i></a>
+            <a href="mailto:toujacknistore@gmail.com"><i class="fas fa-envelope"></i></a>
+            <p>&copy; 2025 TOUJACKNI STORE</p>
+        </div>
+    </footer>
+
+</body>
+</html>

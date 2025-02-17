@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    {% include 'header.html' %}
+
+    <div class="products-container">
+        <h1>Nos produits</h1>
+        <ul>
+            <li><a href="#">Produit 1</a></li>
+            <li><a href="#">Produit 2</a></li>
+            <li><a href="#">Produit 3</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer fixe -->
+    <footer>
+        <div class="contact-icons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/212771078329?text=Salut%20je%20veux%20discuter%20avec%20vous" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Téléphone -->
+            <a href="tel:+212771078329">
+                <i class="fas fa-phone"></i>
+            </a>
+            <!-- Gmail -->
+            <a href="mailto:toujacknistore@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <p>&copy; 2025 TOUJACKNI STORE</p>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
