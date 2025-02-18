@@ -75,7 +75,7 @@ nav ul li a:hover {
 .home-page {
     background: url("../static/85814.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,15 +117,18 @@ nav ul li a:hover {
     background: url("../static/1234.webp") no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
+    height: 100vh;
+    overflow: hidden; /* Empêcher le défilement */
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ✅ Contact Section */
 .contact-section {
-    padding: 50px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -152,6 +155,8 @@ nav ul li a:hover {
     gap: 20px;
     padding: 1px 0;
     z-index: 999;
+}
+
 }
 
 .contact-icons a {
@@ -195,7 +200,7 @@ nav ul li a:hover {
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
 }
 
 /* 🌟 Titre Principal */
@@ -213,7 +218,7 @@ h1 {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -317,7 +322,7 @@ h1 {
     text-align: center;
     max-width: 900px;
     margin: 50px auto;
-    padding: 30px;
+    padding: 25px;
     background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);

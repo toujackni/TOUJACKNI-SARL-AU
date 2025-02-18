@@ -57,20 +57,6 @@
             {% endfor %}
         </div>
 
-        <!-- ✅ REPASSAGE Machines -->
-        <h2 class="category-title">REPASSAGE Machines</h2>
-        <div class="category">
-            {% for product in ["1", "2", "3", "4"] %}
-                <div class="product-card">
-                    <img src="{{ url_for('static', filename='images/repassage_' + product + '.jpg') }}" alt="Repassage {{ product }}">
-                    <h3>Repassage {{ product }}</h3>
-                    <a class="whatsapp-btn" href="https://wa.me/212771078329?text=Bonjour, je suis intéressé par le produit Repassage {{ product }}. Pouvez-vous me donner plus d’informations sur le prix et les caractéristiques ?" target="_blank">
-                        Poser une question <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-
         <!-- ✅ Machines spécialisées -->
         <h2 class="category-title">Machines spécialisées</h2>
         <div class="category">
@@ -85,8 +71,24 @@
             {% endfor %}
         </div>
 
-        <!-- ✅ Épargner -->
-        <h2 class="category-title">Épargner</h2>
+
+        <!-- ✅ REPASSAGE Machines -->
+        <h2 class="category-title">REPASSAGE Machines</h2>
+        <div class="category">
+            {% for product in ["DLD6-0.4-B4", "TDZ-Q1", "TD(Z)-B1", "NHG450_600-B"] %}
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/' + product + '.jpg') }}" alt="{{ product }}">
+                    <h3>{{ product }}</h3>
+                    <a class="whatsapp-btn" href="https://wa.me/212771078329?text=Bonjour, je suis intéressé par le produit {{ product }}. Pouvez-vous me donner plus d’informations sur le prix et les caractéristiques ?" target="_blank">
+                        Poser une question <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+
+        <!-- ✅ Accessoires et pièces de rechange -->
+        <h2 class="category-title">Accessoires et pièces de rechange</h2>
         <p>Vous pouvez demander n’importe quelle pièce que vous voulez.</p>
         <a class="whatsapp-btn" href="https://wa.me/212771078329?text=Bonjour, je veux demander une pièce spécifique. Pouvez-vous me donner plus d’informations ?" target="_blank">
             Demander une pièce <i class="fab fa-whatsapp"></i>
